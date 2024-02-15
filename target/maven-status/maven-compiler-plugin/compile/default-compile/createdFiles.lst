@@ -1,0 +1,16 @@
+com\mycompany\deposito\servlets\CargarProductosSv.class
+com\mycompany\deposito\logica\ControladoraLogica.class
+com\mycompany\deposito\persistencia\ProductoJpaController.class
+com\mycompany\deposito\persistencia\ControladoraPersistencia.class
+com\mycompany\deposito\logica\Categoria.class
+com\mycompany\deposito\servlets\EliminarProductosSv.class
+com\mycompany\deposito\persistencia\exceptions\PreexistingEntityException.class
+com\mycompany\deposito\servlets\CargarCategoriasSv.class
+com\mycompany\deposito\servlets\MostrarProductosSv.class
+com\mycompany\deposito\logica\Producto.class
+com\mycompany\deposito\persistencia\CategoriaJpaController.class
+com\mycompany\deposito\resources\JavaEE8Resource.class
+com\mycompany\deposito\JAXRSConfiguration.class
+com\mycompany\deposito\persistencia\exceptions\NonexistentEntityException.class
+com\mycompany\deposito\persistencia\exceptions\IllegalOrphanException.class
+com\mycompany\deposito\servlets\EditarProductosSv.class
