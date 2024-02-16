@@ -11,7 +11,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <meta charset="UTF-8">
+        <title>Depósito</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body class="bg-body-secondary">
@@ -59,7 +60,7 @@
                             <td><%=cat.getNombre()%> </td>
                             <td><%=cat.getProductos().size()%></td>
                             <td class="d-flex gap-3">
-                                <form class="d-flex" action="/deposito/eliminarCategoria" method="POST">
+                                <form class="d-flex" action="/deposito/eliminarCategoria" method="GET">
                                     <input type="hidden" name="id" value=<%=cat.getId()%>>
                                     <button class="btn btn-outline-danger d-flex align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">

@@ -85,4 +85,16 @@ public class ControladoraLogica {
         
         controlPersis.editarProducto(nuevoProducto);
     }
+
+    public String eliminarCategoria(Long idCategoria) {
+        Categoria categoriaAEliminar = controlPersis.traerCategoria(idCategoria);
+        
+        if(!categoriaAEliminar.getProductos().isEmpty()){
+            return "La categoría tiene productos";
+        } else {
+            controlPersis.eliminarCategoria(idCategoria);
+        }
+        
+        return "";
+    }
 }
