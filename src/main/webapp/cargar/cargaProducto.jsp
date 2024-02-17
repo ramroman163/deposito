@@ -37,13 +37,22 @@
                         <li><a class="dropdown-item "  href="/deposito/cargarCategoria">Categorias</a></li>
                     </ul>
                 </li>
-                <li class="nav-item " ><a href="/deposito/mostrarProductos" class="nav-link " >Visualizar</a></li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Visualizar
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/deposito/mostrarProductos">Productos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/deposito/mostrarCategorias">Categorias</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="#" class="nav-link">Informes</a></li>
             </ul>
         </header>
         <main class="container ">
             <section class="w-50">
-                <form action="/deposito/cargarProducto" method="POST">
+                <form id="formCarga" action="/deposito/cargarProducto" method="POST">
                     <div class="row mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" name="nombre">
@@ -72,14 +81,12 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
                         <input type="text" class="form-control" name="precioCosto">
-                        <span class="input-group-text">.00</span>
                     </div>
 
                     <label for="precioVenta" class="form-label">Precio de venta</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">$</span>
                         <input type="text" class="form-control" name="precioVenta">
-                        <span class="input-group-text">.00</span>
                     </div>
 
                     <button type="submit" class="btn btn-primary row">Cargar</button>
@@ -87,8 +94,7 @@
             </section>
         </main>
 
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        
+
     </body>
 </html>

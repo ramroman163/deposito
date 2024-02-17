@@ -34,7 +34,16 @@
                         <li><a class="dropdown-item active" aria-selected="true" href="/deposito/cargarCategoria">Categorias</a></li>
                     </ul>
                 </li>
-                <li class="nav-item " ><a href="/deposito/mostrarProductos" class="nav-link " >Visualizar</a></li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Visualizar
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/deposito/mostrarProductos">Productos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/deposito/mostrarCategorias">Categorias</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="#" class="nav-link">Informes</a></li>
             </ul>
             

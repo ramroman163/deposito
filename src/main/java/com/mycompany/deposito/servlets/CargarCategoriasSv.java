@@ -67,9 +67,13 @@ public class CargarCategoriasSv extends HttpServlet {
         control = new ControladoraLogica();
         
         String nombre = request.getParameter("nombre");
-        control.guardarCategoria(nombre);
         
-        response.sendRedirect("/deposito/mostrarCategorias");
+        if(nombre.equals("")){
+            response.sendRedirect("/deposito/cargarCategoria");
+        } else {
+            control.guardarCategoria(nombre);
+            response.sendRedirect("/deposito/mostrarCategorias");
+        }
     }
 
     /**

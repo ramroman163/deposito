@@ -59,7 +59,7 @@ public class EliminarCategoriasSv extends HttpServlet {
             System.out.println("No se puede eliminar categoria");            
         }
         
-        response.sendRedirect("/deposito/mostrar/mostrarCategorias.jsp");
+        response.sendRedirect("/deposito/mostrarCategorias");
     }
 
     /**

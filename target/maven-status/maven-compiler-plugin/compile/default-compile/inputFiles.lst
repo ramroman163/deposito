@@ -1,4 +1,5 @@
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\logica\ControladoraLogica.java
+C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\servlets\EliminarCategoriasSv.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\logica\Categoria.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\persistencia\exceptions\NonexistentEntityException.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\persistencia\ProductoJpaController.java
@@ -8,6 +9,7 @@ C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\d
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\persistencia\CategoriaJpaController.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\servlets\EliminarProductosSv.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\servlets\EditarProductosSv.java
+C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\servlets\MostrarCategoriasSv.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\persistencia\exceptions\IllegalOrphanException.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\servlets\CargarCategoriasSv.java
 C:\Users\Roman\Documents\NetBeansProjects\deposito\src\main\java\com\mycompany\deposito\persistencia\ControladoraPersistencia.java

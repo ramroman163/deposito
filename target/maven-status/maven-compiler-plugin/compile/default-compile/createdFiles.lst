@@ -1,5 +1,7 @@
+com\mycompany\deposito\servlets\MostrarCategoriasSv.class
 com\mycompany\deposito\servlets\CargarProductosSv.class
 com\mycompany\deposito\logica\ControladoraLogica.class
+com\mycompany\deposito\servlets\EliminarCategoriasSv.class
 com\mycompany\deposito\persistencia\ProductoJpaController.class
 com\mycompany\deposito\persistencia\ControladoraPersistencia.class
 com\mycompany\deposito\logica\Categoria.class

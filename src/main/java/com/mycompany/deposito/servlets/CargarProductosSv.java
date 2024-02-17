@@ -51,14 +51,14 @@ public class CargarProductosSv extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         control = new ControladoraLogica();
-        
+
         List<Categoria> listaCategorias = control.obtenerCategorias();
-        
+
         HttpSession sesion = request.getSession();
         sesion.setAttribute("listaCategorias", listaCategorias);
-        
+
         response.sendRedirect("/deposito/cargar/cargaProducto.jsp");
     }
 
@@ -82,9 +82,22 @@ public class CargarProductosSv extends HttpServlet {
         String precioCosto = request.getParameter("precioCosto");
         String precioVenta = request.getParameter("precioVenta");
 
-        control.guardarProducto(nombre, categoriaId, cantidad, precioCosto, precioVenta);
-        
-        response.sendRedirect("/deposito/");
+        if (nombre == null
+                || categoriaId == null
+                || cantidad == null
+                || precioCosto == null
+                || precioVenta == null || "".equals(nombre) || "".equals(categoriaId) || "".equals(cantidad)
+                || "".equals(precioCosto) || "".equals(precioVenta)) {
+            HttpSession sesion = request.getSession();
+            
+            response.sendRedirect("/deposito/cargarProducto");
+
+        } else {
+            control.guardarProducto(nombre, categoriaId, cantidad, precioCosto, precioVenta);
+
+            response.sendRedirect("/deposito/mostrarProductos");
+        }
+
     }
 
     /**
