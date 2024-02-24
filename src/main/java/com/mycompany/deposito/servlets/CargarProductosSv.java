@@ -86,9 +86,12 @@ public class CargarProductosSv extends HttpServlet {
                 || categoriaId == null
                 || cantidad == null
                 || precioCosto == null
-                || precioVenta == null || "".equals(nombre) || "".equals(categoriaId) || "".equals(cantidad)
-                || "".equals(precioCosto) || "".equals(precioVenta)) {
-            HttpSession sesion = request.getSession();
+                || precioVenta == null 
+                || "".equals(nombre) 
+                || "".equals(categoriaId) 
+                || "".equals(cantidad)
+                || "".equals(precioCosto) 
+                || "".equals(precioVenta)) {
             
             response.sendRedirect("/deposito/cargarProducto");
 

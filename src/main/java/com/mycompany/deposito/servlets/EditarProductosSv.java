@@ -90,9 +90,23 @@ public class EditarProductosSv extends HttpServlet {
         String precioCosto = request.getParameter("precioCosto");
         String precioVenta = request.getParameter("precioVenta");
         
-        control.editarProducto(id, nombre, categoriaId, cantidad, precioCosto, precioVenta);
+        if (nombre == null
+                || categoriaId == null
+                || cantidad == null
+                || precioCosto == null
+                || precioVenta == null 
+                || "".equals(nombre) 
+                || "".equals(categoriaId) 
+                || "".equals(cantidad)
+                || "".equals(precioCosto) 
+                || "".equals(precioVenta)) {
         
-        response.sendRedirect("/deposito/mostrarProductos");
+            response.sendRedirect("/deposito/editarProducto");
+        } else { 
+            control.editarProducto(id, nombre, categoriaId, cantidad, precioCosto, precioVenta);
+        
+            response.sendRedirect("/deposito/mostrarProductos");
+        }
     }
 
     /**

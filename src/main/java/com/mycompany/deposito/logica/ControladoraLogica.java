@@ -5,6 +5,8 @@
 package com.mycompany.deposito.logica;
 
 import com.mycompany.deposito.persistencia.ControladoraPersistencia;
+import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -22,8 +24,17 @@ public class ControladoraLogica {
         Producto nuevoProducto = new Producto();
         
         int cantidadParseada = Integer.parseInt(cantidad);
-        double precioCostoParseado = Double.parseDouble(precioCosto);
-        double precioVentaParseado = Double.parseDouble(precioVenta);
+        
+        double precioCostoParseado = 0;
+        double precioVentaParseado = 0;
+        
+        try {
+            precioCostoParseado = Double.parseDouble(precioCosto);
+            precioVentaParseado = Double.parseDouble(precioVenta);
+        } catch (Exception e) {
+            return;
+        }
+        
         
         nuevoProducto.setNombre(nombre);
         nuevoProducto.setCantidad(cantidadParseada);
@@ -68,8 +79,15 @@ public class ControladoraLogica {
         
         Long idProductoParseado = Long.valueOf(id);
         int cantidadParseada = Integer.parseInt(cantidad);
-        double precioCostoParseado = Double.parseDouble(precioCosto);
-        double precioVentaParseado = Double.parseDouble(precioVenta);
+        double precioCostoParseado = 0;
+        double precioVentaParseado = 0;
+        
+        try {
+            precioCostoParseado = Double.parseDouble(precioCosto);
+            precioVentaParseado = Double.parseDouble(precioVenta);
+        } catch (Exception e) {
+            return;
+        }
         
         nuevoProducto.setId(idProductoParseado);
         nuevoProducto.setNombre(nombre);

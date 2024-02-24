@@ -68,7 +68,7 @@ public class CargarCategoriasSv extends HttpServlet {
         
         String nombre = request.getParameter("nombre");
         
-        if(nombre.equals("")){
+        if(nombre == null || nombre.equals("")){
             response.sendRedirect("/deposito/cargarCategoria");
         } else {
             control.guardarCategoria(nombre);
